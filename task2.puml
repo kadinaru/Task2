@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class com.example.task2.ShapeFactory {
++Shape createPolygon(int)
+}
+
+class com.example.task2.Main {
++ void start(Stage)
++ {static} void main(String[])
+}
+
+class com.example.task2.Controller {
+- Canvas canvas
+- TextField fieldSides
+- MenuButton menuColor
+- Text figureText
+- Color selectedColor = Color.BLACK
++ void initialize()
++ void onDrawButtonClick()
+}
+
+interface com.example.task2.Shape {
+~ Color getColor()
+~ void draw(GraphicsContext)
+~ String descriptor()
+}
+
+class com.example.task2.Circle {
++ void draw(GraphicsContext)
++ String descriptor()
+}
+
+class com.example.task2.Line {
++ void draw(GraphicsContext)
++ String descriptor()
+}
+
+class com.example.task2.Angle {
++ void draw(GraphicsContext)
++ String descriptor()
+}
+
+class com.example.task2.Triangle {
++ void draw(GraphicsContext)
++ String descriptor()
+}
+
+class com.example.task2.Square {
++ void draw(GraphicsContext)
++ String descriptor()
+}
+
+class com.example.task2.Pentagon {
++ void draw(GraphicsContext)
++ String descriptor()
+}
+
+com.example.task2.Shape <|.. com.example.task2.Circle
+javafx.application.Application <|-- com.example.task2.Main
+com.example.task2.Shape <|.. com.example.task2.Line
+com.example.task2.Shape <|.. com.example.task2.Pentagon
+com.example.task2.Shape <|.. com.example.task2.Triangle
+com.example.task2.Shape <|.. com.example.task2.Angle
+com.example.task2.Shape <|.. com.example.task2.Square
+
+@enduml
