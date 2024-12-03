@@ -39,7 +39,7 @@
 
 ## Демонстрация работы программы
 
-![Рабочее окно программы](https://github.com/kadinaru/Task1/tree/main/img/main.jpg)
+![Рабочее окно программы](https://github.com/kadinaru/Task1/tree/main/img/screenshot.png)
 
 ## Структура проекта
 
