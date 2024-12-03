@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task2.Controller">
+  <children>
+    <FlowPane layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="572.0">
+      <children>
+        <TextField fx:id="fieldSides" text="Количество сторон" />
+        <MenuButton fx:id="menuColor" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Цвет">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Красный" />
+            <MenuItem mnemonicParsing="false" text="Оранжевый" />
+            <MenuItem mnemonicParsing="false" text="Желтый" />
+            <MenuItem mnemonicParsing="false" text="Зеленый" />
+            <MenuItem mnemonicParsing="false" text="Синий" />
+            <MenuItem mnemonicParsing="false" text="Фиолетовый" />
+          </items>
+        </MenuButton>
+        <Button mnemonicParsing="false" onAction="#onDrawButtonClick" prefHeight="26.0" prefWidth="90.0" text="Нарисовать" />
+          <Text fx:id="figureText" strokeType="OUTSIDE" strokeWidth="0.0" text="Фигура: " />
+      </children>
+    </FlowPane>
+    <Canvas fx:id="canvas" height="303.0" layoutX="14.0" layoutY="83.0" width="572.0" />
+  </children>
+</AnchorPane>
