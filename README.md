@@ -41,6 +41,9 @@
 
 ![Рабочее окно программы](https://github.com/kadinaru/Task2/blob/main/img/screenshot.png)
 
+## Архитектура
+![Диаграмма классов](https://github.com/kadinaru/Task2/blob/main/ClassDiagram.png)
+
 ## Структура проекта
 
 ```bash
