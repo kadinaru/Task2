@@ -39,14 +39,14 @@
 
 ## Демонстрация работы программы
 
-![Рабочее окно программы](https://github.com/kadinaru/Task1/tree/main/img/screenshot.png)
+![Рабочее окно программы](https://github.com/kadinaru/Task1/tree/main/img/main.jpg)
 
 ## Структура проекта
 
 ```bash
 com/example/task2
-├── Main.java     # Основной класс приложения
-├── Controller.java      # Контроллер
+├── Main.java                 # Основной класс приложения
+├── Controller.java           # Контроллер
 ├── ShapeFactory.java         # Фабрика фигур
 ├── Shape.java                # Абстрактный суперкласс фигур
 ├── Circle.java               # Реализация круга
