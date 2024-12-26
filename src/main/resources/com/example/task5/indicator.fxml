@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task5.Controller">
+    <TextField fx:id="startField" layoutX="21.0" layoutY="23.0" promptText="Начало отрезка" />
+    <TextField fx:id="currentField" layoutX="177.0" layoutY="22.0" promptText="Текущее значение" />
+
+    <Button layoutX="502.0" layoutY="22.0" onAction="#onBuildIndicator" prefHeight="26.0" prefWidth="150.0" text="Создать индикатор">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+      <effect>
+         <DropShadow>
+            <color>
+               <Color red="0.49473685026168823" green="0.49473685026168823" blue="0.49473685026168823" />
+            </color>
+         </DropShadow>
+      </effect></Button>
+
+    <Pane fx:id="indicatorPane" layoutX="14.0" layoutY="66.0" prefHeight="199.0" prefWidth="650.0" />
+
+    <!-- Добавление метки "Значение..." -->
+    <Label fx:id="valueLabel" layoutX="21.0" layoutY="291.0" text="Значение: ">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+    <TextField fx:id="stopField" layoutX="336.0" layoutY="22.0" promptText="Конец отрезка" />
+</AnchorPane>
