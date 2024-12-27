@@ -9,3 +9,6 @@
 <img width="533" alt="Снимок экрана 2024-12-27 в 13 21 49" src="https://github.com/user-attachments/assets/09b87235-2f9b-476a-aa52-a8413c4f9f2d" />
 
 ## Архитектура
+
+![telegram-cloud-document-2-5436366751971436807](https://github.com/user-attachments/assets/db89d44e-f91e-4563-9d37-a3c610b1d472)
+
